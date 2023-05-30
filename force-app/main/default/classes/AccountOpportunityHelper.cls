@@ -13,11 +13,11 @@ list<Account> selectedAccounts=[select name,id from Account where id in :accids]
 for(Account a:selectedAccounts){
   allOpportunitiesAccountsmap.put(a.ID,a.Name);
 }
-
+system.debug('hello world');
 return allOpportunitiesAccountsmap;
 
 }
-
+ system.debug('hello git');
     public static void accountCreater(map<id,string> maping,Opportunity so){
 
       if(maping.containskey(so.accountID)){
