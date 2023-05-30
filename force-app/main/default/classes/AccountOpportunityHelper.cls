@@ -17,7 +17,7 @@ for(Account a:selectedAccounts){
 return allOpportunitiesAccountsmap;
 
 }
-
+ system.debug('hello git');
     public static void accountCreater(map<id,string> maping,Opportunity so){
 
       if(maping.containskey(so.accountID)){
