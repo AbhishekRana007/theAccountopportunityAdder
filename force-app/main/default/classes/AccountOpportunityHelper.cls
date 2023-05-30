@@ -13,7 +13,7 @@ list<Account> selectedAccounts=[select name,id from Account where id in :accids]
 for(Account a:selectedAccounts){
   allOpportunitiesAccountsmap.put(a.ID,a.Name);
 }
-
+system.debug('hello world');
 return allOpportunitiesAccountsmap;
 
 }
